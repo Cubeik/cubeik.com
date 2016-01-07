@@ -1,0 +1,78 @@
+@import '_colourScheme';
+
+.navigation {
+  display: inline-block;
+  height: inherit;
+}
+
+#navlist {
+  margin-bottom: 0px;
+}
+
+@mixin navcode {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  color: $neutral;
+  text-decoration: none;
+  font-size: 25px;
+  transition: all linear 200ms;
+  transform: perspective(5px) rotateX(1deg);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+@mixin linkcode {
+  a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    color: $neutral;
+    padding: 20px;
+    font-family: comfortaa, cursive;
+    transform: perspective(5px) rotateX(-1deg);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+
+    &:visited {
+      color: #FFF;
+    }
+  }
+}
+
+.navnode:nth-child(1) {
+  @include navcode;
+
+  &.active,
+  &:hover {
+    background-color: $highlight;
+    transition: all cubic-bezier(.17,.67,.66,.96) 300ms;
+  }
+
+  @include linkcode;
+}
+
+.navnode:nth-child(2) {
+  @include  navcode;
+  &.active,
+  &:hover {
+    background-color: $highlight2 !important;
+    transition: all cubic-bezier(.17,.67,.66,.96) 300ms;
+  }
+  @include linkcode;
+}
+
+.navnode:nth-child(3) {
+  @include navcode;
+
+  &.active,
+  &:hover {
+    background-color: $highlight3 !important;
+    transition: all cubic-bezier(.17,.67,.66,.96) 300ms;
+  }
+  @include linkcode;
+}
+
+a {
+  text-decoration: none;
+  color: $neutral;
+}

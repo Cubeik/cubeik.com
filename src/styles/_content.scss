@@ -1,0 +1,30 @@
+@import '_colourScheme';
+
+.content {
+  background-color: $highlight;
+  border-left: 20px;
+  border-color: $dark;
+}
+
+.symbol {
+  transform: translateY(3px);
+  padding-right: 5px;
+  color: $highlight;
+  height: 1em;
+}
+
+.home {
+  background-color: $highlight;
+}
+
+.about {
+  background-color: $highlight2;
+}
+
+.music {
+  background-color: $highlight3;
+}
+
+.scplayer {
+  margin-bottom: 1em;
+}
