@@ -7,72 +7,74 @@
 
 #navlist {
   margin-bottom: 0px;
+  padding-left: 0;
+  text-align: center;
 }
 
-@mixin navcode {
+
+.navnode {
+  position: relative;
+  width: 20%;
+
+  margin-left: 17px;
+  margin-right: 17px;
+
   display: inline-block;
-  margin-left: 15px;
   margin-bottom: 5px;
   color: $neutral;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5em;
   transition: all linear 200ms;
   transform: perspective(5px) rotateX(1deg);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-}
 
-@mixin linkcode {
   a {
+    text-align: center;
     height: 100%;
     width: 100%;
-    display: block;
-    color: $neutral;
     padding: 20px;
+    display: block;
     font-family: comfortaa, cursive;
     transform: perspective(5px) rotateX(-1deg);
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
-
-    &:visited {
-      color: #FFF;
-    }
   }
 }
 
-.navnode:nth-child(1) {
-  @include navcode;
-
-  &.active,
+.navnode {
   &:hover {
-    background-color: $highlight;
+    background-color: $notsodark;
     transition: all cubic-bezier(.17,.67,.66,.96) 300ms;
   }
-
-  @include linkcode;
 }
 
-.navnode:nth-child(2) {
-  @include  navcode;
-  &.active,
-  &:hover {
-    background-color: $highlight2 !important;
-    transition: all cubic-bezier(.17,.67,.66,.96) 300ms;
-  }
-  @include linkcode;
+.navnode.active {
+  z-index: 100;
+  background-color: $highlight;
+  transition: all cubic-bezier(.17,.67,.66,.96) 300ms;
 }
 
-.navnode:nth-child(3) {
-  @include navcode;
 
-  &.active,
-  &:hover {
-    background-color: $highlight3 !important;
-    transition: all cubic-bezier(.17,.67,.66,.96) 300ms;
-  }
-  @include linkcode;
+.navnode:nth-child(1).active {
+  background-color: $highlight;
+}
+
+.navnode:nth-child(2).active {
+  background-color: $highlight2;
+}
+
+.navnode:nth-child(3).active {
+  background-color: $highlight3;
+}
+
+.navnode:nth-child(4).active {
+  background-color: $highlight4;
 }
 
 a {
   text-decoration: none;
   color: $neutral;
+
+  &:visited {
+    color: #FFF;
+  }
 }

@@ -12,7 +12,7 @@ export default React.createClass({
     return (
       <div>
         <h2>Contact</h2>
-        <p>Email: </p> <a href="cubeik@mail.com"> cubeik@mail.com </a>
+        <p>Email: </p> <a href="mailto:cubeik@mail.com"> cubeik@mail.com </a>
       </div>
     );
   }

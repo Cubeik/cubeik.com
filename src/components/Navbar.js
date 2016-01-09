@@ -42,6 +42,10 @@ export default React.createClass({
         <li id='music' className="navnode" onClick={this.handleClick}>
           <Link to="/music" onclick={this.handleClick}><Symbol sid="music" />Music</Link>
         </li>
+
+        <li id='contact' className="navnode" onClick={this.handleClick}>
+          <Link to="/contact" onclick={this.handleClick}><Symbol sid="contact" />Contact</Link>
+        </li>
       </ul>
     )
   }

@@ -18,11 +18,12 @@ export default React.createClass({
           <h1>Cubeik Studios</h1>
           <Navbar />
         </header>
+
         <section className={this.props.children ? this.props.children.props.className : 'home' + ' content'}>
           {this.props.children || <Homepage />}
         </section>
         <footer>
-          <em>©</em> 2015 Tom Merchant
+          <em>©</em> 2015-2016 Tom Merchant
         </footer>
       </div>
     )
