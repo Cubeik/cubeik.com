@@ -16,6 +16,7 @@ export default React.createClass({
           Welcome to the music page, our best music is spotlighted here.
         </p>
 
+        <Scplayer trackid="241518867" />
         <Scplayer trackid='196857744' colour='00CCAA' />
         <Scplayer trackid='161573640' colour='50C3FF' />
         <Scplayer trackid='158690567' colour='E979FE' />

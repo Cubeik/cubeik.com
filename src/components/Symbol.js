@@ -12,10 +12,10 @@ export default React.createClass({
     return {
       sid: 'home',
       symbols: {
-        'home': './dist/images/home.svg',
-        'about': './dist/images/about.svg',
-        'music': './dist/images/music.svg',
-        'contact': './dist/images/contact.svg'
+        'home': './images/home.svg',
+        'about': './images/about.svg',
+        'music': './images/music.svg',
+        'contact': './images/contact.svg'
       },
     }
   },

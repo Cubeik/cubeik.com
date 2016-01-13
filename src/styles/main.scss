@@ -16,8 +16,8 @@ body {
 }
 
 header {
-  color: $dark;
-  background: $dark url(../images/logo.svg) no-repeat center;
+  color: $bg;
+  background: $bg url(../images/logo.svg) no-repeat center;
   background-size: contain;
 
   h1 {
